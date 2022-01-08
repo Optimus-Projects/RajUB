@@ -17,7 +17,7 @@ from ._help import _main_help_menu
 
 # ================================================#
 
-TLINK = INLINE_PIC or "https://telegra.ph/file/74d6259983e0642923fdb.jpg"
+TLINK = INLINE_PIC or "https://telegra.ph/file/fd22b3d2ce4ed9cdea09f.jpg"
 helps = get_string("inline_1")
 
 add_ons = udB.get_key("ADDONS")
@@ -48,7 +48,7 @@ SUP_BUTTONS = [
 async def inline_alive(o):
     MSG = "• **Raj Userbot •**"
     WEB0 = InputWebDocument(
-        "https://telegra.ph/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://telegra.ph/file/fd22b3d2ce4ed9cdea09f.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
