@@ -11,12 +11,12 @@
 import os
 
 a = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
+ ____        _ 
+|  _ \ __ _ (_)
+| |_) / _` || |
+|  _ < (_| || |
+|_| \_\__,_|/ |
+          |__/ 
 """
 
 
@@ -26,10 +26,10 @@ def start():
     check_for_py()
 
     print(f"{a}\n\n")
-    print("Welcome to Ultroid, lets start setting up!\n\n")
+    print("Welcome to RajUB, lets start setting up!\n\n")
     print("Cloning the repository...\n\n")
-    os.system("rm -rf Ultroid")
-    os.system("git clone https://github.com/TeamUltroid/Ultroid")
+    os.system("rm -rf RajUB")
+    os.system("git clone https://github.com/Optimus-Projects/RajUB")
     print("\n\nDone")
     os.chdir("Ultroid")
     clear_screen()
@@ -84,7 +84,7 @@ def start():
         print("Skipped!")
     clear_screen()
     print(a)
-    print("\nStarting Ultroid...")
+    print("\nStarting RajUB...")
     os.system("python3 -m pyUltroid")
 
 
