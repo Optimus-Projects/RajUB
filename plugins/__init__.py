@@ -52,11 +52,11 @@ STUFF = {}
 # Feel Free to Add Any other...
 
 NOSPAM_CHAT = [
-    -1001327032795,  # UltroidSupport
-    -1001387666944,  # PyrogramChat
-    -1001109500936,  # TelethonChat
-    -1001050982793,  # Python
-    -1001256902287,  # DurovsChat
+    -1001327033012,  #porn group
+    -1001387669548,  # sex group
+    -1001109509784,  # masturbate
+    -1001050980123,  # fuck someone
+    -1001256906451,  # fuck tg
 ]
 
 KANGING_STR = [
