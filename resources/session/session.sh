@@ -7,12 +7,12 @@
 
 clear
 echo -e "\e[1m"
-echo" ____        _ "
-echo"|  _ \ __ _ (_)"
-echo"| |_) / _` || |"
-echo"|  _ < (_| || |"
-echo"|_| \_\__,_|/ |"
-echo"          |__/ "
+echo "  ____        _ "
+echo " |  _ \ __ _ (_)"
+echo " | |_) / _` || |"
+echo " |  _ < (_| || |"
+echo " |_| \_\__,_|/ |"
+echo "           |__/ "
 echo -e "\e[0m"
 sec=5
 spinner=(⣻ ⢿ ⡿ ⣟ ⣯ ⣷)
