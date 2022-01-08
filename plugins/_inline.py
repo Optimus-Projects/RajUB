@@ -1,10 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
 import re
 import time
 from datetime import datetime
@@ -43,8 +36,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupport"),
+        Button.url("• Repo •", url="https://t.me/Bom_Bae"),
+        Button.url("• Support •", url="t.me/Bom_Bae"),
     ],
 ]
 
@@ -53,7 +46,7 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    MSG = "• **Ultroid Userbot •**"
+    MSG = "• **Raj Userbot •**"
     WEB0 = InputWebDocument(
         "https://telegra.ph/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
     )
@@ -63,14 +56,14 @@ async def inline_alive(o):
             text=MSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="Ultroid Userbot",
+            title="Raj Userbot",
             description="Userbot | Telethon",
             url=TLINK,
             thumb=WEB0,
             content=InputWebDocument(TLINK, 0, "image/jpg", []),
         )
     ]
-    await o.answer(RES, switch_pm="👥 ULTROID PORTAL", switch_pm_param="start")
+    await o.answer(RES, switch_pm="👥 Raj PORTAL", switch_pm_param="start")
 
 
 @in_pattern("ultd", owner=True)
@@ -93,7 +86,7 @@ async def inline_handler(event):
         )
     else:
         result = await event.builder.article(
-            title="Ultroid Help Menu", text=text, buttons=_main_help_menu
+            title="RajUB Help Menu", text=text, buttons=_main_help_menu
         )
     await event.answer([result], gallery=True)
 
@@ -183,7 +176,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© Join @TeamUltroid"
+    help_ += "\n© msg @Bom_Bae"
     buttons = []
     if INLINE_PIC:
         data = f"sndplug_{key}_{file}"
@@ -282,7 +275,7 @@ async def _(e):
         [
             Button.switch_inline(
                 "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ",
-                query="go TeamUltroid",
+                query="go TeamRaj",
                 same_peer=True,
             ),
             Button.switch_inline(
@@ -317,10 +310,10 @@ async def _(e):
         ],
         [
             Button.switch_inline(
-                "Tᴡɪᴛᴛᴇʀ Usᴇʀ", query="twitter theultroid", same_peer=True
+                "Tᴡɪᴛᴛᴇʀ Usᴇʀ", query="twitter theRaj", same_peer=True
             ),
             Button.switch_inline(
-                "Kᴏᴏ Sᴇᴀʀᴄʜ", query="koo @__kumar__amit", same_peer=True
+                "Kᴏᴏ Sᴇᴀʀᴄʜ", query="koo ", same_peer=True
             ),
         ],
         [
@@ -443,9 +436,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ultroid Op",
+                            title="Raj Op",
                             text=txt,
-                            description="@TheUltroid",
+                            description="@Bom_Bae",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -458,10 +451,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Ultroid Op",
+                        title="Raj Op",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@Bom_Bae",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
@@ -473,7 +466,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("Ultroid Op", text=txt, link_preview=False, buttons=btn)
+        await builder.article("Raj Op", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 
