@@ -28,7 +28,7 @@ if Owner_info_msg is None:
 
 **Message Forwards** - {udB.get_key("PMBOT")}
 
-**Ultroid [v{ultroid_version}](https://github.com/TeamUltroid/Ultroid), powered by @TeamUltroid**
+**Ultroid [v{ultroid_version}](https://github.com/TeamUltroid/Ultroid), powered by @TeamUltroid || Modified BY: @AjayReddyJ**
 """
 
 
@@ -67,7 +67,7 @@ async def own(event):
         mention=event.sender.mention, me=inline_mention(ultroid_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@TheUltroid**"
+        msg += "\n\n• Powered by **@TheUltroid || Modified BY: @AjayReddyJ**"
     await event.edit(
         msg,
         buttons=[Button.inline("Close", data="closeit")],
@@ -155,7 +155,7 @@ async def ultroid(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(get_all_users("BOT_USERS"))
-    msg = """Ultroid Assistant - Stats
+    msg = """Raj Assistant - Stats
 Total Users - {}""".format(
         ok,
     )
